@@ -29,8 +29,10 @@ html{
 .container {
     display: grid;
     grid-template-columns: 10% minmax(1200px, 1920px) 10%;
+   
 }
-/* header hijo container */
+/* +++++++++++++++++++++++++++++++++ HEADER +++++++++++++++++++++++++++++++++ */
+/* HEADER hijo container */
 .header {
     grid-column: 2/3;
     display: grid;
@@ -49,6 +51,15 @@ html{
     text-decoration: none;
     margin: 0 0.5rem;
 }
+
+a.activo{
+    font-weight: bold;
+    text-decoration: underline;
+}
+.noActivo{
+
+}
+
 .menu__inicio {
 }
 .menu__proyectos {
@@ -65,4 +76,19 @@ html{
     object-fit: cover;
 }
 
+/* +++++++++++++++++++++++++++++++++ MAIN +++++++++++++++++++++++++++++++++ */
+.main{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: 20% 1fr 20%;
+}
 
+
+/* +++++++++++++++++++++++++++++++++ FOOTER +++++++++++++++++++++++++++++++++ */
+.footer{
+    color: var(--color-blanco);
+    grid-column: 2/3;
+    background-color: var(--color-negro);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) auto;
+}
